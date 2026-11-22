@@ -1,115 +1,117 @@
 <!doctype html>
-<html lang="en" class="is-booting">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#050505">
-<meta name="description" content="Ezra Anandaraj — Network Engineer, Infrastructure Specialist and Cloud Practitioner.">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EZRA ANANDARAJ — Network Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261123-1">
-</head>
-<body>
-<div class="grain" aria-hidden="true"></div>
-<div class="loader" id="loader">
-  <div class="loader-mark">EA<span>.</span></div>
-  <div class="loader-line"><i></i></div>
-  <p>INITIALIZING PERSONAL UNIVERSE</p>
-  <button id="enterBtn" type="button">ENTER THE WORLD <span>↗</span></button>
+<meta name="description" content="Ezra Anandaraj — Network Engineer, Infrastructure Specialist and Cloud Practitioner.">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#070304}
+.pg{position:relative;background:#070304;color:#EFE6E1;font-family:Inter,Arial,sans-serif;font-weight:300;overflow:hidden}
+.grain{position:absolute;inset:0;width:100%;height:100%;opacity:.09;pointer-events:none;z-index:5;mix-blend-mode:screen}
+.mono{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#A89A94}
+.red{color:#F0503C}
+.an{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+.wrap{max-width:1260px;margin:0 auto;padding:0 clamp(20px,5vw,56px);position:relative;z-index:2}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:26px 0;flex-wrap:wrap;gap:12px}
+.hdr a{color:#A89A94;text-decoration:none;margin-left:26px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.hdr a:hover{color:#F0503C}
+.hero{position:relative;min-height:860px;background:radial-gradient(ellipse 55% 50% at 50% 60%,#4a110b 0%,#1a0605 45%,#070304 80%)}
+.chip{position:absolute;padding:9px 16px;border:1px solid #5a2a24;background:#0d0505;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#E8D8D2;z-index:3;white-space:nowrap}
+.chip.hot{border-color:#F0503C;color:#F0503C}
+.dot{position:absolute;width:9px;height:9px;border-radius:50%;background:#F0503C;z-index:3}
+.btn{display:inline-block;min-height:44px;box-sizing:border-box;padding:14px 26px;border:1px solid #EFE6E1;color:#EFE6E1;text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.btn:hover{background:#F0503C;border-color:#F0503C;color:#070304}
+.btn.fill{background:#F0503C;border-color:#F0503C;color:#070304}
+.sec{position:relative;padding:130px 0;border-top:1px solid #2a1411}
+.uni{position:relative;height:680px;margin-top:40px}
+.card{background:#0d0505;border:1px solid #3a1a16;padding:30px 26px}
+.card:hover{border-color:#F0503C;background:#150807}
+.card.on{border-color:#F0503C;box-shadow:0 0 60px #F0503C33}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+</style>
+</head><body>
+
+<div class="pg">
+<svg class="grain" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+
+<!-- SCENE 1: THE OPENING -->
+<section class="hero">
+<div class="wrap">
+<div class="hdr"><span class="an" style="font-size:30px">EZRA.</span><div><a href="#universe">Universe</a><a href="#time">Timeline</a><a href="#projects">Projects</a><a href="#finale">Contact</a></div></div>
 </div>
-<header class="header" id="header">
-  <a class="wordmark" href="#home">EZRA<span>.</span></a>
-  <p class="header-role">NETWORK ENGINEER <i>·</i> INFRASTRUCTURE SPECIALIST</p>
-  <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-  <nav class="nav" id="nav">
-    <a href="#universe">Universe</a><a href="#journey">Journey</a><a href="#work">Field notes</a><a href="resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a><a href="#contact">Contact <b>↗</b></a>
-  </nav>
-</header>
-<main>
-<section class="hero" id="home">
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div class="hero-index"><span>PORTFOLIO / 2026</span><span>11°56' N — 79°49' E</span></div>
-  <div class="hero-copy">
-    <p class="eyebrow"><i></i> WELCOME TO MY WORLD</p>
-    <h1><span class="hero-first">EZRA</span><span class="hero-last">ANANDARAJ<span class="period">.</span></span></h1>
-    <div class="hero-subline"><span>NETWORK ENGINEER</span><i></i><span>INFRASTRUCTURE SPECIALIST</span></div>
-    <p class="hero-quote">Every challenge became a lesson.<br>Every connection, a new possibility.</p>
-    <div class="hero-actions"><a class="round-link" href="#universe">EXPLORE MY WORLD <span>↓</span></a><a class="quiet-link" href="resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME ↗</a><a class="quiet-link" href="https://www.linkedin.com/in/ezra-anandaraj-7633a514b/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div>
-  </div>
-  <div class="hero-bottom"><span>CURIOUS BY NATURE</span><span class="scroll-cue">SCROLL TO DISCOVER <b>↓</b></span><span>BUILT ON CONTINUOUS LEARNING</span></div>
-  <div class="hero-side-note">SYSTEMS / PEOPLE / POSSIBILITIES</div>
+<div class="chip" style="left:8%;top:26%">Juniper</div>
+<div class="chip hot" style="right:9%;top:22%">Palo Alto</div>
+<div class="chip" style="left:14%;bottom:20%">Dynatrace</div>
+<div class="chip" style="right:12%;bottom:24%">ServiceNow</div>
+<div class="dot" style="left:6%;top:44%"></div><div class="dot" style="right:7%;top:48%"></div><div class="dot" style="left:48%;top:20%"></div>
+<div class="wrap" style="text-align:center;padding-top:130px">
+<div class="mono red">Welcome to my world</div>
+<h1 class="an" style="font-size:clamp(150px,33vw,470px);margin:20px 0 0;color:#1c0a08;-webkit-text-stroke:2px #F0503C;text-shadow:0 0 90px #F0503C55">EZRA</h1>
+<div class="an" style="font-size:clamp(40px,8vw,110px);margin-top:-6px">ANANDARAJ</div>
+<div class="mono" style="margin-top:28px;color:#EFE6E1">Network Engineer · Infrastructure Specialist</div>
+<div style="margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><a class="btn fill" href="#universe">Explore my world ↓</a><a class="btn" href="https://ezrajohnny.github.io/johnny-cinematic-portfolio/resume.pdf">Resume ↗</a></div>
+</div>
 </section>
-<section class="manifesto" id="universe">
-  <div class="section-label"><span>01 — THE UNIVERSE</span><span>WHAT I CONNECT</span></div>
-  <div class="manifesto-heading"><h2>My world is built<br>around <em>connections.</em></h2><p>From the physical layer to the cloud — I work across the systems that keep people, platforms and businesses connected.</p></div>
-  <div class="universe-scene">
-    <div class="universe-grid" aria-hidden="true"></div>
-    <div class="universe-core"><span>EA</span><small>NETWORK<br>CORE</small></div>
-    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
-    <div class="orbit-node node-1"><b>01</b><span>NETWORKING</span></div>
-    <div class="orbit-node node-2"><b>02</b><span>DATA CENTER</span></div>
-    <div class="orbit-node node-3"><b>03</b><span>SECURITY</span></div>
-    <div class="orbit-node node-4"><b>04</b><span>CLOUD</span></div>
-    <div class="orbit-node node-5"><b>05</b><span>OBSERVABILITY</span></div>
-    <div class="universe-foot"><span>ONE CONNECTED ECOSYSTEM</span><span>EXPLORE / LEARN / BUILD</span></div>
-  </div>
-  <div class="skill-orbit-tags"><span>TCP/IP</span><span>VLANs</span><span>SUBNETTING</span><span>DNS</span><span>DHCP</span><span>NAT</span><span>OSI MODEL</span><span>JUNIPER</span><span>CISCO</span><span>PALO ALTO</span><span>OPENGEAR</span><span>ZPE SYSTEMS</span><span>JUNOS SPACE</span><span>CLI</span><span>DYNATRACE</span><span>BIGPANDA</span><span>ONEAGENT</span><span>SERVICENOW</span><span>AWS</span><span>LINUX</span><span>WINDOWS SERVER</span><span>AIX</span><span>SOLARIS</span><span>CITRIX</span></div>
-  <div class="skills-detail">
-    <article><span>01 / NETWORKING</span><p>TCP/IP · VLANs · Subnetting · DNS · DHCP · NAT · OSI model · Layer 2 troubleshooting · Routing fundamentals · Connectivity validation</p></article>
-    <article><span>02 / NETWORK PLATFORMS</span><p>Juniper switches · Cisco switches · Palo Alto Networks firewalls · Opengear · ZPE Systems</p></article>
-    <article><span>03 / IMPLEMENTATION & UPGRADES</span><p>Firewall and switch software upgrades · Junos Space · CLI · Switch provisioning · Uplink connections · Post-upgrade validation</p></article>
-    <article><span>04 / MONITORING & IT OPERATIONS</span><p>Dynatrace · BigPanda · OneAgent deployment · Alert tuning · Threshold optimization · Root cause analysis · ServiceNow · Incident, change and release management · Maintenance-window support</p></article>
-    <article><span>05 / CLOUD & SYSTEMS</span><p>AWS · Linux · Windows Server · AIX · Solaris · Citrix</p></article>
-  </div>
+
+<!-- SCENE 2: THE UNIVERSE -->
+<section class="sec" id="universe">
+<div class="wrap">
+<div class="mono red">01 — The universe</div>
+<h2 class="an" style="font-size:clamp(56px,9vw,130px);margin:22px 0 0">My world is built<br>around connections.</h2>
+<div class="uni">
+<svg viewBox="0 0 1000 680" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true"><path d="M20 560 C200 80 380 640 520 340 S800 60 980 420" fill="none" stroke="#F0503C" stroke-width="2" opacity=".85"/><path d="M20 580 C220 140 400 660 540 380 S820 100 980 450" fill="none" stroke="#7a2a20" stroke-width="1"/></svg>
+<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;border:1px solid #F0503C;display:flex;align-items:center;justify-content:center;box-shadow:0 0 90px #F0503C55;background:#0d0505;z-index:3"><span class="an" style="font-size:54px">EA</span></div>
+<div class="chip" style="left:2%;top:8%">TCP/IP</div><div class="chip hot" style="left:24%;top:2%">VLANs</div><div class="chip" style="left:44%;top:10%">DNS · DHCP · NAT</div><div class="chip" style="right:6%;top:6%">Juniper</div>
+<div class="chip" style="left:0;top:40%">Cisco</div><div class="chip hot" style="right:0;top:34%">Palo Alto</div>
+<div class="chip" style="left:10%;bottom:6%">Junos Space</div><div class="chip" style="left:32%;bottom:0">Dynatrace</div><div class="chip hot" style="left:52%;bottom:8%">BigPanda</div><div class="chip" style="right:14%;bottom:2%">AWS</div><div class="chip" style="right:0;bottom:30%">Linux</div><div class="chip" style="left:30%;top:42%">Opengear · ZPE</div>
+</div>
+</div>
 </section>
-<section class="journey" id="journey">
-  <div class="section-label"><span>02 — THE TIMELINE</span><span>A JOURNEY THROUGH TIME</span></div>
-  <div class="journey-head"><h2>Every chapter<br>built <em>the next.</em></h2><p>Different roles. Different challenges. One continuous direction: growing into a stronger infrastructure and network engineer.</p></div>
-  <div class="timeline">
-    <div class="timeline-track"><i></i></div>
-    <article class="timeline-item"><div class="time-year">DEC 2025 — NOW</div><div class="time-dot"></div><div class="time-content"><span class="time-type">CHAPTER 05 / CURRENT</span><h3>Gen Implementation Engineer</h3><h4>TRIANZ · EQUINIX GEN-GDC</h4><p>Performed Palo Alto Networks firewall software upgrades across active and passive firewalls, upgraded Juniper switches using Junos Space and CLI, and validated device health, interfaces and connectivity. Handled switch port provisioning, VLAN validation, host reachability, packet loss and network connectivity issues. Supported Cisco, Juniper, Palo Alto, Opengear and ZPE platforms through approved ServiceNow changes and maintenance windows.</p><div class="chips"><span>CISCO</span><span>JUNIPER</span><span>PALO ALTO</span><span>JUNOS SPACE</span><span>OPENGEAR</span><span>ZPE</span></div><div class="achievement"><b>KEY PROJECT ACHIEVEMENT · MB2 PHASE 2</b><p>Onsite network deployment at the Equinix MB2 data center in Mumbai across five floors, covering NIR and NER rooms. Completed rack-and-stack, cabling, cable dressing, labeling, uplinks, switch configuration and implementation checks across five access switches and two core switches.</p></div></div></article>
-    <article class="timeline-item"><div class="time-year">JAN 2024 — DEC 2025</div><div class="time-dot"></div><div class="time-content"><span class="time-type">CHAPTER 04</span><h3>Software Engineer · Infrastructure Monitoring</h3><h4>TRIANZ · KAISER PERMANENTE</h4><p>Monitored enterprise infrastructure health and performance using Dynatrace. Used BigPanda for alert monitoring and event correlation, managed ServiceNow incidents, CTASKs and RTASKs, investigated infrastructure alerts, and supported troubleshooting and escalation across Linux, Windows, AIX, Solaris and Citrix environments.</p><div class="chips"><span>DYNATRACE</span><span>BIGPANDA</span><span>ONEAGENT</span><span>SERVICENOW</span></div></div></article>
-    <article class="timeline-item"><div class="time-year">2022 — 2023</div><div class="time-dot"></div><div class="time-content"><span class="time-type">CHAPTER 03</span><h3>Finance Analyst / Manager</h3><h4>BYJU'S THINK & LEARN PVT LTD</h4><p>Managed financial operations, reporting, KPI tracking and stakeholder coordination.</p></div></article>
-    <article class="timeline-item"><div class="time-year">2020 — 2022</div><div class="time-dot"></div><div class="time-content"><span class="time-type">CHAPTER 02</span><h3>XML Developer & QA Analyst</h3><h4>WILEY / ELSEVIER</h4><p>Performed XML development, content validation, quality assurance testing and compliance verification.</p></div></article>
-    <article class="timeline-item"><div class="time-year">2020</div><div class="time-dot"></div><div class="time-content"><span class="time-type">CHAPTER 01</span><h3>Network Administrator Trainee</h3><h4>EXTRAVIZ SOLUTIONS</h4><p>Supported Microsoft 365 administration, VoIP configuration, user management and basic network maintenance.</p></div></article>
-  </div>
+
+<!-- SCENE 3: THE TIME MACHINE -->
+<section class="sec" id="time" style="background:#0a0403">
+<div class="wrap">
+<div class="mono red">02 — The time machine</div>
+<h2 class="an" style="font-size:clamp(56px,9vw,130px);margin:22px 0 0">Every chapter<br>built the next.</h2>
+<div style="display:flex;justify-content:center;margin:50px 0">
+<svg viewBox="0 0 400 300" width="min(100%,520px)" role="img" aria-label="Clock hand pointing to 2026"><path d="M30 270 A190 190 0 0 1 370 270" fill="none" stroke="#3a1a16" stroke-width="2"/><path d="M30 270 A190 190 0 0 1 300 108" fill="none" stroke="#F0503C" stroke-width="3"/><g fill="#F0503C"><circle cx="30" cy="270" r="6"/><circle cx="76" cy="160" r="6"/><circle cx="160" cy="94" r="6"/><circle cx="270" cy="94" r="6"/><circle cx="340" cy="160" r="6"/><circle cx="370" cy="270" r="9"/></g><line x1="200" y1="270" x2="352" y2="140" stroke="#F0503C" stroke-width="3"/><line x1="200" y1="270" x2="95" y2="190" stroke="#EFE6E1" stroke-width="2"/><circle cx="200" cy="270" r="16" fill="#150807" stroke="#F0503C" stroke-width="2"/><g class="mono" font-family="DM Mono" font-size="11" fill="#A89A94"><text x="14" y="292">2020</text><text x="346" y="292">2026</text></g></svg>
+</div>
+<div class="g">
+<div class="card"><div class="mono red">2020</div><h3 class="an" style="font-size:30px;margin:14px 0 10px">Network Admin Trainee</h3><div class="mono">Extraviz Solutions</div></div>
+<div class="card"><div class="mono red">2020 — 2022</div><h3 class="an" style="font-size:30px;margin:14px 0 10px">XML Developer &amp; QA</h3><div class="mono">Wiley / Elsevier</div></div>
+<div class="card"><div class="mono red">2022 — 2023</div><h3 class="an" style="font-size:30px;margin:14px 0 10px">Finance Analyst</h3><div class="mono">BYJU’S</div></div>
+<div class="card"><div class="mono red">2024 — 2025</div><h3 class="an" style="font-size:30px;margin:14px 0 10px">Infrastructure Monitoring</h3><div class="mono">Trianz · Kaiser Permanente</div></div>
+<div class="card on"><div class="mono red">Dec 2025 — Now</div><h3 class="an" style="font-size:30px;margin:14px 0 10px">Gen Implementation Engineer</h3><div class="mono">Trianz · Equinix GEN-GDC</div></div>
+</div>
+</div>
 </section>
-<section class="education">
-  <div class="section-label"><span>03 — THE FOUNDATION</span><span>EDUCATION & CREDENTIALS</span></div>
-  <div class="education-grid">
-    <div><p class="eyebrow">ACADEMIC FOUNDATION</p><h2>Built on<br><em>curiosity.</em></h2></div>
-    <div class="education-list">
-      <article><span>MASTER'S DEGREE</span><h3>Network and Information Security</h3><p>Pondicherry University</p></article>
-      <article><span>BACHELOR'S DEGREE</span><h3>Computer Science and Engineering</h3><p>Christ College of Engineering & Technology</p></article>
-      <article><span>CERTIFICATION</span><h3>AWS Certified Solutions Architect – Associate</h3><p>Cloud architecture foundations</p></article>
-    </div>
-  </div>
+
+<!-- SCENE 4: THE PROJECT UNIVERSE -->
+<section class="sec" id="projects">
+<div class="wrap">
+<div class="mono red">03 — Field notes</div>
+<h2 class="an" style="font-size:clamp(56px,9vw,130px);margin:22px 0 50px">Beyond the<br>ticket queue.</h2>
+<div class="g" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card on" style="padding:40px 34px"><div class="mono red">Key project · MB2 Phase 2</div><h3 class="an" style="font-size:48px;margin:16px 0">Mumbai data center deployment</h3><p style="line-height:1.7;color:#C9BBB5;margin:0">Five floors at Equinix MB2: rack-and-stack, cabling, labeling, uplinks and implementation checks across five access switches and two core switches.</p></div>
+<div class="card" style="padding:40px 34px"><div class="mono red">Upgrades</div><h3 class="an" style="font-size:48px;margin:16px 0">Firewalls &amp; switches</h3><p style="line-height:1.7;color:#C9BBB5;margin:0">Palo Alto active/passive upgrades and Juniper upgrades via Junos Space and CLI, with post-upgrade validation of health and connectivity.</p></div>
+<div class="card" style="padding:40px 34px"><div class="mono red">Reliability</div><h3 class="an" style="font-size:48px;margin:16px 0">Monitoring &amp; response</h3><p style="line-height:1.7;color:#C9BBB5;margin:0">Dynatrace and BigPanda alert investigation, tuning and root cause analysis, with ServiceNow incident and change coordination.</p></div>
+</div>
+<div class="g" style="margin-top:60px">
+<div class="card"><div class="mono">Master’s</div><h3 class="an" style="font-size:26px;margin:12px 0 8px">Network &amp; Information Security</h3><div class="mono">Pondicherry University</div></div>
+<div class="card"><div class="mono">Bachelor’s</div><h3 class="an" style="font-size:26px;margin:12px 0 8px">Computer Science &amp; Engineering</h3><div class="mono">Christ College of Eng. &amp; Tech.</div></div>
+<div class="card"><div class="mono">Certification</div><h3 class="an" style="font-size:26px;margin:12px 0 8px">AWS Solutions Architect – Associate</h3></div>
+</div>
+</div>
 </section>
-<section class="field-notes" id="work">
-  <div class="section-label"><span>04 — FIELD NOTES</span><span>WORK IN THE REAL WORLD</span></div>
-  <div class="field-head"><h2>Beyond the<br><em>ticket queue.</em></h2><p>Hands-on work across enterprise networks, data center infrastructure and monitoring operations. Environment-specific details are kept high-level.</p></div>
-  <div class="field-grid">
-    <article class="field-card field-card-large"><span class="field-num">01 / DEPLOYMENT</span><div class="field-art rack-art"><div class="rack"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="rack"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="rack"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><h3>Data Center Implementation</h3><p>Racking, stacking, cabling, labeling, uplinks, switch configuration and deployment support.</p></article>
-    <article class="field-card"><span class="field-num">02 / TROUBLESHOOTING</span><div class="field-art topology-art"><div class="topo-core">CORE</div><i class="topo-line l1"></i><i class="topo-line l2"></i><i class="topo-line l3"></i><b class="topo-point p1"></b><b class="topo-point p2"></b><b class="topo-point p3"></b></div><h3>Network Operations</h3><p>Interface states, VLANs, spanning tree, LACP, physical connectivity and fault isolation.</p></article>
-    <article class="field-card"><span class="field-num">03 / RELIABILITY</span><div class="field-art monitor-art"><div class="monitor-screen"><span>INFRASTRUCTURE HEALTH</span><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>OBSERVABILITY / 24×7</small></div></div><h3>Monitoring & Reliability</h3><p>Alert investigation, monitoring validation, agent upgrades and service-management coordination.</p></article>
-  </div>
+
+<!-- FINALE -->
+<section class="sec" id="finale" style="padding-bottom:60px;background:radial-gradient(ellipse 70% 60% at 50% 100%,#4a110b 0%,#070304 70%)">
+<div class="wrap" style="text-align:center">
+<div class="mono red">The next connection</div>
+<h2 class="an" style="font-size:clamp(70px,16vw,240px);margin:24px 0 36px;color:#1c0a08;-webkit-text-stroke:2px #F0503C">LET’S BUILD<br>WHAT CONNECTS</h2>
+<p style="font-size:22px;color:#C9BBB5;margin:0 0 36px">Every challenge became a lesson. Every connection, a new possibility.</p>
+<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap"><a class="btn fill" href="mailto:ezrame14@gmail.com">Start a conversation ↗</a><a class="btn" href="https://www.linkedin.com/in/ezra-anandaraj-7633a514b/">LinkedIn ↗</a><a class="btn" href="https://github.com/Ezrajohnny">GitHub ↗</a></div>
+<div class="mono" style="margin-top:90px">Engineered with curiosity · © Ezra Anandaraj</div>
+</div>
 </section>
-<section class="beyond">
-  <div class="section-label"><span>05 — BEYOND TECHNOLOGY</span><span>THE HUMAN SIDE</span></div>
-  <div class="beyond-content"><h2>Curiosity doesn't<br>stop at <em>technology.</em></h2><div class="beyond-list"><p><b>01</b> Content creation & digital storytelling</p><p><b>02</b> Photography & visual exploration</p><p><b>03</b> Writing, ideas & creative expression</p></div></div>
-</section>
-<section class="contact" id="contact">
-  <div class="contact-glow"></div>
-  <div class="section-label"><span>06 — THE NEXT CONNECTION</span><span>OPEN TO OPPORTUNITIES</span></div>
-  <p class="contact-overline">HAVE A CHALLENGE, IDEA OR OPPORTUNITY?</p>
-  <h2>Let's build<br>what <em>connects.</em></h2>
-  <div class="contact-actions"><a class="contact-cta" href="mailto:ezrame14@gmail.com">START A CONVERSATION <span>↗</span></a><a class="resume-download" href="resume.pdf" target="_blank" rel="noreferrer" download>DOWNLOAD MY RESUME <span>↓</span></a></div>
-  <div class="contact-bottom"><a href="tel:+919944955837">+91 99449 55837 ↗</a><a href="mailto:ezrame14@gmail.com">EZRAME14@GMAIL.COM ↗</a><a href="https://www.linkedin.com/in/ezra-anandaraj-7633a514b/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/Ezrajohnny" target="_blank" rel="noreferrer">GITHUB ↗</a></div>
-</section>
-</main>
-<footer class="footer"><a class="wordmark" href="#home">EZRA<span>.</span></a><span>ENGINEERED WITH CURIOSITY · © <b id="year"></b></span><a href="#home">BACK TO TOP ↑</a></footer>
-<script src="script.js?v=20261122-2"></script>
-</body>
-</html>
+</div>
+</body></html>
