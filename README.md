@@ -12,8 +12,8 @@ python -m http.server 8000
 Then visit http://localhost:8000.
 
 ## Before publishing
-- Replace `YOUR_EMAIL@example.com` in the contact link with your preferred email address.
-- Add your LinkedIn URL when ready.
+- Profile portrait is stored at `assets/johnny-profile.jpg`.
+- Contact email and LinkedIn profile are configured in `index.html`.
 - Review role dates and technical descriptions for accuracy.
 - Add approved personal photos or project screenshots if desired.
 
