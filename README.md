@@ -1,9 +1,10 @@
-# Johnny — Network Engineer Portfolio
+# Ezra Anandaraj — Cinematic Network Engineering Portfolio
 
-A custom, responsive cinematic portfolio built with plain HTML, CSS, and JavaScript. No framework or build step is required.
+A responsive, cinematic portfolio built with HTML, CSS and vanilla JavaScript. It uses original CSS/canvas visuals inspired by immersive portfolio storytelling. No framework or build step is required.
 
 ## Run locally
-Open `index.html` in a browser, or use a local static server:
+
+Open `index.html` in a browser or run:
 
 ```bash
 python -m http.server 8000
@@ -11,14 +12,22 @@ python -m http.server 8000
 
 Then visit http://localhost:8000.
 
-## Before publishing
-- Profile portrait is stored at `assets/johnny-profile.jpg`.
-- Contact email and LinkedIn profile are configured in `index.html`.
-- Review role dates and technical descriptions for accuracy.
-- Add approved personal photos or project screenshots if desired.
+## Personal details
 
-## Deploy
-This is a static site and can be deployed using GitHub Pages, Cloudflare Pages, or any static hosting provider.
+- Name: Ezra Anandaraj
+- Role: Network Engineer / Infrastructure Specialist
+- Email: ezrame14@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ezra-anandaraj-7633a514b/
+- Portrait: `assets/ezra-profile.jpg`
 
-## Credits
-Original implementation created for Johnny. No source code or media assets were copied from the reference portfolio repository.
+## Before sharing publicly
+
+Review career dates, role descriptions and credential details for accuracy. The portfolio intentionally avoids client-confidential network details and does not publish a phone number.
+
+## Deployment
+
+GitHub Pages is configured through the repository's Pages workflow. The site is static and can also be hosted on any static hosting provider.
+
+## Design note
+
+This is an original implementation inspired by the reference portfolio's cinematic pacing, typography, animated scene transitions and timeline storytelling. It does not reuse the reference creator's code, video, images or other proprietary assets.
